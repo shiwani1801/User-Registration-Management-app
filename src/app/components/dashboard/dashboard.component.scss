@@ -1,0 +1,65 @@
+p {
+    margin-left: 30px;
+    color: grey;
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  span {
+    color: grey;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 1px;
+  }
+  
+  .size {
+    width: 20%;
+    margin-top: 30px;
+  }
+  .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  img {
+    height: 65px;
+    width: 65px;
+  }
+  
+  button {
+    display: flex;
+    background-color: white;
+    height: 75px;
+    width: 339px;
+    border-bottom: white;
+    border-right: white;
+    border-left: white;
+    border-top: white;
+  }
+  
+  h3 {
+    font-size: x-large;
+    font-weight: 900;
+    font-style: oblique;
+  }
+  .graph {
+    margin-top: 30px;
+    height: 700px;
+    width: 1080px;
+    margin-left: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .latestregistration {
+    margin-top: 30px;
+    margin-left: 40px;
+    height: 500px;
+    width: 500px;
+  }
+  .main{
+      display: flex;
+    justify-content: space-evenly;
+      
+  }
+  

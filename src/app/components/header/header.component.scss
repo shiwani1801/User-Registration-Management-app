@@ -1,0 +1,33 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.fonts{
+  font-size: medium; 
+  font-weight: 600; 
+  font-style: italic;
+  padding: 30px;
+}
+
+  .example-container {
+    width: 100%;
+    height: 865px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
+  img{
+    height: 20px;
+   width: 20px;
+   position: absolute;
+   margin-left: -25px;
+  }

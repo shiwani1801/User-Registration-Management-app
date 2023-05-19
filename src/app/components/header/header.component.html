@@ -1,0 +1,83 @@
+<mat-toolbar color="primary">
+    <button
+      (click)="drawer.toggle()"
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>User Management</span>
+    <span class="example-spacer"></span>
+    
+      <button mat-button routerLink="/login">
+        <img src="https://cdn-icons-png.flaticon.com/512/78/78948.png"/>
+        Logout
+      </button>
+    <button routerLink="/header/dash" mat-icon-button class="example-icon"
+      aria-label="Example icon-button with share icon">
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="home"
+      ></mat-icon>
+    </button>
+  </mat-toolbar>
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <div>
+        <button mat-button class="fonts" routerLink="/dashboard">
+          <img
+            src="https://www.nicepng.com/png/full/800-8005015_login-to-client-dashboard-youtube-round-icon-blue.png"
+            alt=""
+          />
+          Dashboard
+        </button>
+      </div>
+  
+      <div>
+            <button mat-button [matMenuTriggerFor]="menu1" class="fonts">
+        <img
+          src="https://www.pngfind.com/pngs/m/470-4703547_icon-user-icon-hd-png-download.png"
+        />
+        User
+        <mat-menu #menu1="matMenu">
+          <button mat-menu-item routerLink="/header/registration">New user</button>
+          <button mat-menu-item>User List</button>
+        </mat-menu>
+      </button>
+      </div>
+  
+      
+  
+      <div>
+        <button mat-button class="fonts">
+          <img
+            src="https://cdn.imgbin.com/23/5/24/profile-icon-contact-us-icon-user-icon-jaFTEQSz.jpg"
+            alt=""
+          />
+          Profile
+        </button>
+      </div>
+      <div>
+        <button mat-button class="fonts">
+          <img
+            src="https://thumbs.dreamstime.com/b/settings-process-icon-shiny-blue-square-button-isolated-143263959.jpg"
+            alt=""
+          />
+          Setting
+        </button>
+      </div>
+      <div>
+        <button mat-button class="fonts" routerLink="/login">
+          <img
+            src="https://thumbs.dreamstime.com/b/logout-icon-glassy-cyan-blue-round-button-isolated-abstract-illustration-93024236.jpg"
+            alt=""
+          />
+          Logout
+        </button>
+      </div>
+    </mat-drawer>
+    <router-outlet> </router-outlet>
+  </mat-drawer-container>
+  
